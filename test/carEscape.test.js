@@ -6,6 +6,9 @@ describe("carEscape", () => {
   });
 
   it("when parked on the spot that is second left of the exit, the path to exit the car park would be 'right, right'", () => {
-    expect(carEscape([[]])).toStrictEqual(["right", "right"]);
+    expect(carEscape([[false, false, true]], [0, 0])).toStrictEqual([
+      "right",
+      "right",
+    ]);
   });
 });

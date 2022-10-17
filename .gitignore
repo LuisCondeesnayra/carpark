@@ -131,3 +131,4 @@ dist
 
 # sonar
 .scannerwork
+.DS_store
