@@ -19,4 +19,18 @@ describe("carEscape", () => {
       "right",
     ]);
   });
+
+  it("When parked in a random place in a floor with 3 spaces and 2 levels park", () => {
+    const initialFloor = 1;
+    const initialPosition = 0;
+    const parkingLot = [
+      [false, false, true],
+      [false, false, true],
+    ];
+    expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
+      "right",
+      "right",
+      "down",
+    ]);
+  });
 });

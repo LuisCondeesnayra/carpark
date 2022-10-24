@@ -43,5 +43,12 @@ Driver: LC
 Navigator: Brenda
 
 ✅: finish one story parkinglot with 3 spaces parked on the first parking space
-🚧: Commit
-TODO: Write a test of a second story parking slot whith 2 spaces each floor parked on the far right on the second floor
+✅: Commit
+TODO: Write a test of a second story parking slot with 2 spaces each floor parked on the far right on the second floor
+
+## Pomodoro 5
+Driver: Brenda
+Navigator: JC
+
+🚧: Finish one story finish one story parkinglot with 3 spaces and 2 levels parked in a random parking space
+ :Commit
