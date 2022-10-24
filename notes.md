@@ -30,8 +30,18 @@ update domain with exception handling
 a ground floor, starting position is 2 spaces from the exit
 Pass the parking lot structure
 
-## Pomodoro 3 
+## Pomodoro 3
+
 Driver: JC
 Nav: LC
 Todo: finish one story parkinglot with 3 spaces parked on the first parking space
-Todo: Write a test of a two story parking slot whith 2 spaces each floor parked on the far right on the second  floor 
+Todo: Write a test of a two story parking slot whith 2 spaces each floor parked on the far right on the second floor
+
+## Pomodoro 4
+
+Driver: LC
+Navigator: Brenda
+
+✅: finish one story parkinglot with 3 spaces parked on the first parking space
+🚧: Commit
+TODO: Write a test of a second story parking slot whith 2 spaces each floor parked on the far right on the second floor
