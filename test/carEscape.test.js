@@ -1,36 +1,89 @@
 const carEscape = require("../src/carEscape");
 
-describe("carEscape", () => {
-  it("when parked one spot to the left of the exit, the output should be 'right' to move to the exit", () => {
+describe("Parking lot with one floor", () => {
+  it("Should  a two spaces parking lot the moves to the exit should be 'right'", () => {
     const initialFloor = 0;
     const initialPosition = 0;
-    const parkingLot = [[false, true]];
+    const parkingLot = [["slot", "exit"]];
     expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
       "right",
     ]);
   });
 
-  it("when parked on the spot that is second left of the exit, the path to exit the car park would be 'right, right'", () => {
+  it("Should a three spaces parking lot with one floor moves to the exit be 'right' 'right'", () => {
     const initialFloor = 0;
     const initialPosition = 0;
-    const parkingLot = [[false, false, true]];
+    const parkingLot = [["slot", "slot", "exit"]];
     expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
       "right",
       "right",
     ]);
   });
+});
 
-  it("When parked in a random place in a floor with 3 spaces and 2 levels park", () => {
+describe("Parking Lot with two floors", () => {
+  it("Should a 3 spaces parking lot with two floors moves to the exit be 'right' 'right' 'down'", () => {
     const initialFloor = 1;
     const initialPosition = 0;
     const parkingLot = [
-      [false, false, true],
-      [false, false, true],
+      ["slot", "slot", "exit"],
+      ["slot", "slot", "stairs"],
     ];
     expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
       "right",
       "right",
       "down",
+    ]);
+  });
+
+  it("Should a 7 spaces parking lot with two floors moves to the exit be three right ,down, three right", () => {
+    const initialFloor = 1;
+    const initialPosition = 0;
+    const parkingLot = [
+      ["slot", "slot", "slot", "slot", "slot", "slot", "exit"],
+      ["slot", "slot", "slot", "stairs", "slot", "slot", "slot"],
+    ];
+    expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
+      "right",
+      "right",
+      "right",
+      "down",
+      "right",
+      "right",
+      "right",
+    ]);
+  });
+
+  it("Should a 2 spaces parking lot with two floors moves to the exit be three left ,down, right", () => {
+    const initialFloor = 1;
+    const initialPosition = 1;
+    const parkingLot = [
+      ["slot", "exit"],
+      ["stairs", "slot"],
+    ];
+    expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
+      "left",
+      "down",
+      "right",
+    ]);
+  });
+});
+
+describe("Parking Lot with three floors", () => {
+  it("Should a 2 spaces parking lot with two floors moves to the exit be three right ,down, three right", () => {
+    const initialFloor = 2;
+    const initialPosition = 0;
+    const parkingLot = [
+      ["slot", "exit"],
+      ["stairs", "slot"],
+      ["slot", "stairs"],
+    ];
+    expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
+      "right",
+      "down",
+      "left",
+      "down",
+      "right",
     ]);
   });
 });

@@ -20,3 +20,4 @@ exit 1,0
 
 function exit seeker
 function position updater & record moves
+refactor the describes

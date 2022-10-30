@@ -50,5 +50,33 @@ TODO: Write a test of a second story parking slot with 2 spaces each floor parke
 Driver: Brenda
 Navigator: JC
 
-🚧: Finish one story finish one story parkinglot with 3 spaces and 2 levels parked in a random parking space
- :Commit
+✅: Finish one story finish one story parkinglot with 3 spaces and 2 levels parked in a random parking space
+✅: Commit
+
+
+## Pomodoro 6
+Driver: Luis
+Navigator: JC
+
+WTF:
+    Be able to identify the exit in one floor
+    Change the parking definition to be more clear on it
+
+✅: Finish one story of rename the parking lot definition (false = slot, true = exit/stair) in the existing test
+🚧: Finish one story of a parkinglot with 2 leves, 4 spaces in level 2 and 4 spaces in level 1  parked in a random parking space
+: Commit 
+
+## Pomodoro 6
+Driver: Luis
+Navigator: JC
+WTF:
+ Separate describe from tests
+ Function names
+ TODO:  Finish one story of a parkinglot with 2 leves, 4 spaces in level 2 and 4 spaces in level 1  parked in a random parking space
+ Validate seeker
+## Pomodoro 7
+WTF: 
+    -Separate tests into describes
+    -Rewrite test description
+ ✅ : write a two story parking lot where the initial position is 1 on the second floor
+ ✅: write a 3 story parking lot with 2 spaces
