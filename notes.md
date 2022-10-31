@@ -87,3 +87,12 @@ WTF:
 
 ✅: Add a new describe for 4 floors
 ✅: write the test with 10 spaces starting in floor 4 with initial position in the 7th parking slot
+
+## Pomodoro 9
+Driver: Luis
+Navigator: JC
+
+✅: Refactor: split logic in indivifdual functions
+✅: Convert break cases in UAT
+✅: Create a describe for invalid parking lot configuration
+🚧: Create a test to validate a different value that isn't a number

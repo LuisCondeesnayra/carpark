@@ -88,15 +88,59 @@ describe("Parking Lot with three floors", () => {
   });
 });
 
-describe('Parking Lot with four floors', () => {
-  test('Should 10 spaces parking lot with four floors moves to the exit be five left, down, four right, down, four left, down, seven right', () => {
+describe("Parking Lot with four floors", () => {
+  test("Should 10 spaces parking lot with four floors moves to the exit be five left, down, four right, down, four left, down, seven right", () => {
     const initialFloor = 3;
     const initialPosition = 7;
     const parkingLot = [
-      ["slot", "slot", "slot", "slot", "slot", "slot", "slot", "slot", "slot", "exit"],
-      ["slot", "slot", "stairs", "slot", "slot", "slot", "slot", "slot", "slot", "slot"],
-      ["slot", "slot", "slot", "slot", "slot", "slot", "stairs", "slot", "slot", "slot"],
-      ["slot", "slot", "stairs", "slot", "slot", "slot", "slot", "slot", "slot", "slot"],
+      [
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "exit",
+      ],
+      [
+        "slot",
+        "slot",
+        "stairs",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+      ],
+      [
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "stairs",
+        "slot",
+        "slot",
+        "slot",
+      ],
+      [
+        "slot",
+        "slot",
+        "stairs",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+        "slot",
+      ],
     ];
     expect(carEscape(parkingLot, initialFloor, initialPosition)).toStrictEqual([
       "left",
@@ -126,15 +170,15 @@ describe('Parking Lot with four floors', () => {
   });
 });
 
-describe('Parking Lot with invalid configuration', () => { 
-  describe('I want to use the initial floor for start my road on the parking', () => {
-    
-  it('Given a initial floor as X', () => {
-    const initialFloor = 'X';
-    const initialPosition = 0;
-    const parkingLot = [["slot", "exit"]];
-    expect(()=>(carEscape(parkingLot, initialFloor, initialPosition))).toThrow('invalid value configuration');
+describe("Parking Lot with invalid configuration", () => {
+  describe("I want to use the initial floor for start my road on the parking", () => {
+    it("Given a initial floor as X", () => {
+      const initialFloor = "X";
+      const initialPosition = 0;
+      const parkingLot = [["slot", "exit"]];
+      expect(() =>
+        carEscape(parkingLot, initialFloor, initialPosition)
+      ).toThrow(TypeError("invalid value configuration"));
+    });
   });
- })
-
 });
