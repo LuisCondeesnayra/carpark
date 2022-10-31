@@ -80,3 +80,10 @@ WTF:
     -Rewrite test description
  ✅ : write a two story parking lot where the initial position is 1 on the second floor
  ✅: write a 3 story parking lot with 2 spaces
+
+ ## Pomodoro 8
+ Driver: JC
+ Navigator: Brenda
+
+✅: Add a new describe for 4 floors
+✅: write the test with 10 spaces starting in floor 4 with initial position in the 7th parking slot
